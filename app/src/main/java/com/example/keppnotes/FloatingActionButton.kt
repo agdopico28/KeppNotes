@@ -71,13 +71,13 @@ fun MyFLoadinActionButton(){
         )
     }
 
-    Box ( contentAlignment = Alignment.BottomEnd,
+    Box (  
        ){
         FloatingActionButton(
             onClick = {
             },
             containerColor = Color(0xFF8341F8),
-            shape= RoundedCornerShape(50.dp),
+            shape= RoundedCornerShape(60.dp),
             modifier = Modifier
                 .drawBehind {
                     rotate(value) {

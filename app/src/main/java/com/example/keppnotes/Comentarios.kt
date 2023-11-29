@@ -68,8 +68,6 @@ import com.example.keppnotes.ui.theme.Purple80
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun comentarios() {
-
-    val buttonVisible = remember { mutableStateOf(true) }
     val lazyListState = rememberLazyListState()
     var scrolled = 0f
     var previousOffset = 0
@@ -92,8 +90,10 @@ fun comentarios() {
     ) {
         Column (modifier= Modifier
             .padding(top = 15.dp)
-            .background(Color(0xFF271800)) ) {
-            Spacer(modifier = Modifier.padding(30.dp))
+            .background(Color(0xFF271800)) )
+        {
+
+            Spacer(modifier = Modifier.padding(25.dp))
 
             LazyColumn(
                 state = lazyListState,
